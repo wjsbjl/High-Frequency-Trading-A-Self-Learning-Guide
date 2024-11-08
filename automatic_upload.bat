@@ -28,10 +28,10 @@ if %errorlevel% neq 0 (
 )
 
 :: Push changes to remote repository
-git push >> output.txt 2>&1
+git push origin master
 if %errorlevel% neq 0 (
-    echo "Error: git push failed" >> output.txt
-    echo "Error in git push. Exiting..."
+    echo Error: git push failed 1>>output.txt
+    echo Error in git push. Exiting...
     goto end
 )
 
