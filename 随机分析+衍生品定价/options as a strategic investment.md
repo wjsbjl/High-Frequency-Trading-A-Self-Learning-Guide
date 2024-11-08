@@ -1,0 +1,2 @@
+- Covered call writing
+	- 发行call，买对应执行份额股票对冲

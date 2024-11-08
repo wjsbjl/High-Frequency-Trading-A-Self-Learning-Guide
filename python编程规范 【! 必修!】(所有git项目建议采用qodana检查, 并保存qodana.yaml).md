@@ -1,0 +1,23 @@
+## 资源
+- **书籍**:
+	- 《Python编程风格》 by Steven F. Lott
+- **在线资源**:
+	- [PEP 8 – Style Guide for Python Code](https://www.python.org/dev/peps/pep-0008/)
+	- [Qodana](https://www.jetbrains.com/qodana/)
+- 必学
+	- [Python语言规范](https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_language_rules.html#python "Link to this heading")
+## 笔记
+- Python语言规范
+	- 用pylint检查，我们试试qodana
+	- 导入和包应该尽可能具体
+	- 处理异常时
+		- 优先使用合适的内置异常类. 比如, 用 `ValueError` 表示前置条件错误 (例如给必须为正数的参数传入了负值). 不要使用 `assert` 语句来验证公开API的参数值. 应该用 `assert` 来保证内部正确性, 不应该用 `assert` 来纠正参数或表示意外情况. 若要用异常来表示意外情况, 应该用 `raise
+		- 尽少用`try/except`, 避免跳过没想到的情形
+- Qodana
+	- 更新Pycharm后可以直接用
+	- 懒了，再说
+- 待做
+	- https://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_language_rules.html#id1
+		- 默认迭代器和操作符
+	- https://zh-google-styleguide.readthedocs.io/en/latest/google-java-styleguide/formatting.html
+	- https://zh-google-styleguide.readthedocs.io/en/latest/google-java-styleguide/naming.html

@@ -1,0 +1,2 @@
+- 信任区域策略优化（Trust region policy optimization, TRPO）
+- 类比为爬山路线的选择，计算很多有点复杂

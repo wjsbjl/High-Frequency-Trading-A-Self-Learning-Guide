@@ -1,0 +1,3 @@
+- AdaBoost
+	- 用exponential loss, $L_{exp}(y,\hat{y})=\exp(-y·\hat{y})$
+	- 感觉对收益率误分类挺友好的，abs小于threshold设为0，大于threshold的越反损失函数越大，越近损失函数越小![[exponential loss原函数、一阶导、二阶导.png]]
