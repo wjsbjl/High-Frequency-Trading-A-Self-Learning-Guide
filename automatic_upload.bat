@@ -14,28 +14,28 @@ set message=Automated commit on %date% %time%
 :: Stage changes
 git add . >> output.txt 2>&1
 if %errorlevel% neq 0 (
-    echo "Error: git add failed" >> output.txt
-    echo "Error in git add. Exiting..."
+    echo Error: git add failed >> output.txt
+    echo Error in git add. Exiting...
     goto end
 )
 
 :: Commit changes with the automated message
 git commit -m "%message%" >> output.txt 2>&1
 if %errorlevel% neq 0 (
-    echo "Error: git commit failed" >> output.txt
-    echo "Error in git commit. Exiting..."
+    echo Error: git commit failed >> output.txt
+    echo Error in git commit. Exiting...
     goto end
 )
 
 :: Push changes to remote repository
-git push origin master
+git push origin master >> output.txt 2>&1
 if %errorlevel% neq 0 (
-    echo Error: git push failed 1>>output.txt
+    echo Error: git push failed >> output.txt
     echo Error in git push. Exiting...
     goto end
 )
 
-echo "Automated commit and push completed successfully." >> output.txt
+echo Automated commit and push completed successfully. >> output.txt
 
 :end
 :: Prevent the window from closing automatically
