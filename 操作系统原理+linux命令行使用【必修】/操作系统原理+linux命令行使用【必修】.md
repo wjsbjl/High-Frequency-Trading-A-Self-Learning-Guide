@@ -15,6 +15,7 @@ copy /b part_a + part_b a.exe
 ## 常识
 - [[在 “Windows命令提示符“ 中添加 “Anaconda Prompt“]]
 - [[定时任务]]
+- [[Batch, bat]]
 - 装机
 	- 连wifi的时候，shift + F10，输入`oobe\bypassnro`
 - 文本查看器
