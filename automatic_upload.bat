@@ -4,12 +4,13 @@ chcp 65001
 
 :: Modify this path to match your actual path
 
-echo ============================= >> output.txt
-:: set seperate line
 :: Get the current date and time
 for /f "tokens=2 delims==" %%i in ('"wmic os get localdatetime /value"') do set datetime=%%i
 set date=%datetime:~0,4%%datetime:~4,2%%datetime:~6,2%
 set message=Automated commit on %date% %time%
+
+:: set seperate line
+echo ===============%date% %time%=============== >> output.txt
 
 :: Execute Git commands and save output to output.txt
 :: Check for errors after each command to prevent moving forward if any command fails
