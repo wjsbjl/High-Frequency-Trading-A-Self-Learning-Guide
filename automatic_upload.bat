@@ -1,4 +1,4 @@
-@echo off
+:: @echo off
 chcp 65001
 :: If there are Chinese characters in the path, this line is necessary
 
