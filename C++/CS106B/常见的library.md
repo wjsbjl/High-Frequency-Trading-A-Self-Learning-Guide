@@ -1,0 +1,2 @@
+- `<iostream>` gives us access to _cout_ and _endl_
+- `"console.h"` gives us a cute pop-up terminal for our program's output

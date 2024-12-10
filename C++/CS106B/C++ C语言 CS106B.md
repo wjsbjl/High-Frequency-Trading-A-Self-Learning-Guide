@@ -1,0 +1,117 @@
+第一遍把课听了，第二遍把课件看了，第三遍把这俩合起来。
+## 链接
+- 安装
+	- [QT Creator安装方法和课程扩展包](https://web.stanford.edu/dept/cs_edu/resources/qt/install-mac)
+	- [QT Creator配置](https://web.stanford.edu/dept/cs_edu/resources/qt/recommended-settings)
+- 流程
+	- [课程bilibili视频](https://www.bilibili.com/video/BV1G7411k7jG/?spm_id_from=333.337.search-card.all.click&vd_source=c36274ab260939107d72b44fc0e0e746)
+	- [CS106B新的讲义](https://web.stanford.edu/class/cs106b/about_lectures)
+	- [CS106B新的作业](https://web.stanford.edu/class/cs106b/about_assignments)
+- 模版
+	- [Blank Qt project](https://web.stanford.edu/dept/cs_edu/resources/qt/BlankProject.zip) (template for creating a new CS106 project)
+- 没用
+	- [CS106B 2018 的讲义](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1184/)
+	- [作业](https://web.stanford.edu/class/archive/cs/cs106b/cs106b.1198/schedule/) 
+	- [别人的作业](https://github.com/heavy3/programming-abstractions?tab=readme-ov-file)
+## 作业 [Assignments](https://web.stanford.edu/class/cs106b/about_assignments)
+- [Assignment 0. Welcome to CS106B!](https://web.stanford.edu/class/cs106b/assignments/0-namehash/)
+	- 配置Qt Creator，Debug
+- [[A1.]] [Getting Your C++ Legs](https://web.stanford.edu/class/cs106b/assignments/1-cpp/)
+	- 拖了很久还是没写的作业
+- [A2. Fun with Collections](https://web.stanford.edu/class/cs106b/assignments/2-adt/)
+- [A3. Recursion Etudes](https://web.stanford.edu/class/cs106b/assignments/3-recursion/)
+- [A4. Recursive Backtracking](https://web.stanford.edu/class/cs106b/assignments/4-backtracking/)
+- [A5. Priority Queue](https://web.stanford.edu/class/cs106b/assignments/5-pqueue/)
+- [A6. Linked Lists](https://web.stanford.edu/class/cs106b/assignments/6-lists/)
+- [A7. Huffman Coding](https://web.stanford.edu/class/cs106b/assignments/7-huffman/)
+## 笔记 [Lectures](https://web.stanford.edu/class/cs106b/about_lectures)
+- 第1节课 [Welcome!](https://web.stanford.edu/class/cs106b/lectures/01-welcome/)
+	- [syllabus的Prezi，挺有意思的](https://prezi.com/view/YlAFxJBKY907gEYROplc/)
+- [[第2节课]] [C++ Fundamentals](https://web.stanford.edu/class/cs106b/lectures/02-cpp/)
+	- 基础的数据结构、引用、控制流、函数和程序运行
+	- main函数，程序入口
+	- include
+		- `#include <libraryname>` C++系统库
+		- `#include "libraryname.h"` 本地库
+		- 教授不喜欢C++的两件事，这是其中之一
+	- namespace
+		- `using namespace name`, 把库的“name space“带入到全局环境
+		- `namespace::identifier`，如果没有using declaration，则可以直接用这种格式。`std::cout<<"Hello, world!" << std::endl;`
+	- `cout << expression << expression ...`
+	- `endl` means "end of line", same as "\n", but more compatible;
+	- `cin`容易出错，不建议。建议直接用斯坦福的库
+		- `#include "simpio.h"`, `getInteger`只接受整数输入
+- [[第3节课]] [C++ Strings](https://web.stanford.edu/class/cs106b/lectures/03-strings/)|
+	- 函数
+		- `Function prototypes` C++需要先定义函数再用。如果想先用再定义，就要在前面加上prototype说明函数的用法（输入、输出）
+		- reference semantics：p.s.`&`引用 传递在内存中的位置（地址），需要modify参数的时候用`&`
+			- `swap(int a, int b)`交换copy, `swap(int& a, int&b)`交换reference
+			- 用法区别
+				- 如果用一个很大的矩阵，就要决定是否copy，这是C++多于其他编程的思考
+			- 讲解区别
+				- 黑马课程是int * a然后传&a
+				- 斯坦福课程是int & a然后传a
+		- output parameters 两个数据不容易return，所以直接修改
+			- EX.1 算年龄上下限
+				- `void datingRange(int age, int& min, int& max){min = age/2; max = age*2}`，输入`datingRange(age, young, old)`自动得到计算后的young和old
+			- Ex.2 平方根
+				- `#include<cmath>`
+				- `void quadratic(int a, int b, int c, double& root1, double& root2){x1=(-b+sqrt(b *b - 4 * a * c))/(2 * a)}` 
+		- Procedural decomp
+			- 怎么把程序拆解成小的部分
+		- String
+			- `cout << "Type Your Name"`
+			- `cin >> name`
+- [[第4节课]] [Testing, Vectors, and Grids](https://web.stanford.edu/class/cs106b/lectures/04-vector-grid/)
+	- Testing
+		- TestingTesting可以用来评分
+		- 单独开`STUENT_TEST`可以让之前的错误不影响之后的结果
+		- 测试功能包括一般的测试以及计时功能
+	- ADT: Abstrace Data Type
+		- Vector和Grid Vector，为了省时间需要pass by reference而不是pass by value
+- [[第5节课]] [Stacks and Queues](https://web.stanford.edu/class/cs106b/lectures/05-stack-queue/)
+	- 共性
+		- 都是ADT，不能用`[]`访问
+	- Stack
+		- LIFO，后进先出
+		- 主要包括`peek()`看顶层是什么，`pop()`看并移除顶层元素，`push(value)`把值放到stack里
+		- 不包括查询
+		- `#include "stack.h"`
+		- `Stack< **DATA_TYPE** > **VARIABLE_NAME** ;`
+		- 可以用`<<`输出stack，用`==`和`!=`判断
+		- 可以用来reverse
+		- 可以用vector的`.add`和`.remove`实现stack的功能
+		- 可以用来处理postfix notation (also sometimes called [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)).
+	- Queue
+		- FIFO，先进先出
+		- 主要包括`peek()`看顶层是什么，`dequeue()`看并移除顶层元素，`enqueue(value)`把值放到stack里
+		- `#include "queue.h"`
+		- `Queue< **DATA_TYPE** > **VARIABLE_NAME** ;`
+		- 循环中用`q.size()`做条件判断会提前终止，可以`!q.isEmpty()`
+	- **Grid Redux**
+		- 可以直接传给cout，可以`g.locations()`获取GridLocation 返回r0c0，可以用`for (int i : g)`
+- 作业1
+- 第6节课 [Sets and Maps](https://web.stanford.edu/class/cs106b/lectures/06-set-map/)
+- 第7节课 [Introduction to Recursion](https://web.stanford.edu/class/cs106b/lectures/07-recursion1/)
+- 第8节课 [Big-O and Algorithmic Analysis](https://web.stanford.edu/class/cs106b/lectures/08-bigo/)
+- 第9节课 [More Recursion](https://web.stanford.edu/class/cs106b/lectures/09-recursion2/)
+- 第10节课 [Recursive Problem Solving](https://web.stanford.edu/class/cs106b/lectures/10-recursion3/)
+- 第11节课 [Recursive Backtracking and Enumeration](https://web.stanford.edu/class/cs106b/lectures/11-backtracking1/)
+- 第12节课 [More Recursive Backtracking](https://web.stanford.edu/class/cs106b/lectures/12-backtracking2/)
+- 第13节课 [Sorting Algorithms](https://web.stanford.edu/class/cs106b/lectures/13-sorting/)
+- 第14节课 [Object-Oriented Programming](https://web.stanford.edu/class/cs106b/lectures/14-oop/)
+- 第15节课 [Pointers and Arrays](https://web.stanford.edu/class/cs106b/lectures/15-pointers-and-arrays/)
+- 第16节课 [Dynamic Memory Management](https://web.stanford.edu/class/cs106b/lectures/16-dynamic-memory-management/)
+- 第17节课 [Priority Queues and Binary Heaps](https://web.stanford.edu/class/cs106b/lectures/17-pqheap/)
+- 第18节课 [Applied Ethics](https://web.stanford.edu/class/cs106b/lectures/18-ethics/)
+- 第19节课 [Introduction to Linked Lists](https://web.stanford.edu/class/cs106b/lectures/19-lists1/)
+- 第20节课 [More Linked Lists](https://web.stanford.edu/class/cs106b/lectures/20-lists2/)
+- 第21节课 [Binary Trees, Binary Search Trees, and Tree Traversals](https://web.stanford.edu/class/cs106b/lectures/21-trees/)
+- 第22节课 [More on Binary Trees](https://web.stanford.edu/class/cs106b/lectures/22-bst/)
+- 第23节课 [Binary Trees: Loose Ends](https://web.stanford.edu/class/cs106b/lectures/23-loose-ends/)
+- 第24节课 [Huffman Coding](https://web.stanford.edu/class/cs106b/lectures/24-huffman/)
+- 第25节课 [Hashing](https://web.stanford.edu/class/cs106b/lectures/25-hashing/)
+- 第26节课 [Graph Algorithms](https://web.stanford.edu/class/cs106b/lectures/26-graphs/)
+- 第27节课 [Dijkstra, A*, and Topological Sort](https://web.stanford.edu/class/cs106b/lectures/27-graph-algorithms/)
+- 第28节课 [Wrap](https://web.stanford.edu/class/cs106b/lectures/28-wrap/)
+- 第29节课 [Ask-Me-Anything](https://web.stanford.edu/class/cs106b/lectures/29-ama/)
