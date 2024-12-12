@@ -1,3 +1,5 @@
+## 重新来听
+[视频网址](https://www.youtube.com/watch?v=FIroM06V2MA&list=PL-h0BZdG_K4kAmsfvAik-Za826pNbQd0d)
 第一遍把课听了，第二遍把课件看了，第三遍把这俩合起来。
 ## 链接
 - 安装
@@ -27,7 +29,7 @@
 ## 笔记 [Lectures](https://web.stanford.edu/class/cs106b/about_lectures)
 - 第1节课 [Welcome!](https://web.stanford.edu/class/cs106b/lectures/01-welcome/)
 	- [syllabus的Prezi，挺有意思的](https://prezi.com/view/YlAFxJBKY907gEYROplc/)
-- [[第2节课]] [C++ Fundamentals](https://web.stanford.edu/class/cs106b/lectures/02-cpp/)
+- [[第2节课 C++ Functions; Strings]] [C++ Fundamentals](https://web.stanford.edu/class/cs106b/lectures/02-cpp/)
 	- 基础的数据结构、引用、控制流、函数和程序运行
 	- main函数，程序入口
 	- include
