@@ -59,6 +59,7 @@ for ( INITIALIZATION_STATEMENT ; CONDITION ; POST_ITERATION_STATEMENT )
 }
 ```
 - 注意分号semicolon的使用
+- e.g. `for (int i=0; i < s.length(); i++){}`
 
 **For-Each Loops (Range-Based Loops)**
 ```
@@ -87,3 +88,11 @@ else
 
 - **Common Pitfall with the || Operator**
 	- `int numCupcakes = 5;  if(numCupcakes == 1 || 2){cout << "true" << endl;}`被判定为true，因为2非0，被认为true。应该`numCupcakes == 1 || numCupcakes == 2`
+- **Pass-by-Value Functions**
+	- `void foo(int n)`
+	- 函数内部对n进行复制，这种操作对矩阵很耗时
+- **Pass-by-Reference Functions**
+	- `void foo(int**&** n)`
+	- 函数直接操纵
+- **Qt Creator's Indication of Pass-by-Reference**
+	- Note that when we call a function, Qt Creator uses italics to indicate whether any parameters are pass-by-value. Unitalicized parameters are pass-by-value. (See calls to _treasureHunt()_ above.)

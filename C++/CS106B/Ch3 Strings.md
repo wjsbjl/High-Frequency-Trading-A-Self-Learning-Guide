@@ -1,11 +1,4 @@
-- **Pass-by-Value Functions**
-	- `void foo(int n)`
-	- 函数内部对n进行复制，这种操作对矩阵很耗时
-- **Pass-by-Reference Functions**
-	- `void foo(int**&** n)`
-	- 函数直接操纵
-- **Qt Creator's Indication of Pass-by-Reference**
-	- Note that when we call a function, Qt Creator uses italics to indicate whether any parameters are pass-by-value. Unitalicized parameters are pass-by-value. (See calls to _treasureHunt()_ above.)
+- `char` 单个字符，用单引号
 - **Typecasting**
 	- `(int)ch`通过括号把强制转换为int
 - _Strings_
@@ -16,25 +9,29 @@
 		- strings可以用Dot Operator `.` 获取methods and properties
 **C++ String Member Functions**
 
-| Member Function | Description |
-| ---- | ---- |
-| s.append(str) | add text to the end of a string |
-| s.compare(str) | return -1, 0, or 1 depending on relative ordering |
-| s.erase(index, length) | delete text from a string starting at given index |
-| s.find(str)  <br>s.rfind(str) | return first or last index where the start of _str_ appears in this string (returns _string::npos_ if not found) |
-| s.insert(index, str) | add text into string at a given index |
-| s.length()  <br>s.size() | return number of characters in the string |
-| s.replace(index, len, str) | replace _len_ chars at given index with new text |
+| Member Function                             | Description                                                                                                                         |
+| ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| s.append(str)                               | add text to the end of a string                                                                                                     |
+| s.compare(str)                              | return -1, 0, or 1 depending on relative ordering                                                                                   |
+| s.erase(index, length)                      | delete text from a string starting at given index                                                                                   |
+| s.find(str)  <br>s.rfind(str)               | return first or last index where the start of _str_ appears in this string (returns _string::npos_ if not found)                    |
+| s.insert(index, str)                        | add text into string at a given index                                                                                               |
+| s.length()  <br>s.size()                    | return number of characters in the string                                                                                           |
+| s.replace(index, len, str)                  | replace _len_ chars at given index with new text                                                                                    |
 | s.substr(start, length)  <br>s.subsr(start) | return a new string with the next _length_ chars beginning at _start_ (inclusive); if _length_ is omitted, grabs till end of string |
+> 如果有错，会返回`string::npos`，其中npos是string和array的最大长度
+
 **Stanford C++ String Library (_strlib.h_)**
 
-| Function Name | Description |
-| ---- | ---- |
-| endsWith(str, suffix)  <br>startsWith(str, prefix) | returns _true_ if the given string begins or ends with the given prefix/suffix text |
-| integerToString(int)  <br>realToString(double)  <br>stringToInteger(str)  <br>stringToReal(str) | returns a conversion between numbers and strings |
-| equalsIgnoreCase(s1, s2) | returns true if _s1_ and _s2_ have same chars, ignoring case |
-| toLowerCase(str)  <br>toUpperCase(str) | returns an upper/lowercase version of a string (pass-by-value!) |
-| trim(str) | returns string with surrounding whitespace removed |
+| Function Name                                                                                   | Description                                                                         |
+| ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| endsWith(str, suffix)  <br>startsWith(str, prefix)                                              | returns _true_ if the given string begins or ends with the given prefix/suffix text |
+| integerToString(int)  <br>realToString(double)  <br>stringToInteger(str)  <br>stringToReal(str) | returns a conversion between numbers and strings                                    |
+| equalsIgnoreCase(s1, s2)                                                                        | returns true if _s1_ and _s2_ have same chars, ignoring case                        |
+| toLowerCase(str)  <br>toUpperCase(str)                                                          | returns an upper/lowercase version of a string (pass-by-value!)                     |
+| trim(str)                                                                                       | returns string with surrounding whitespace removed                                  |
+> Stanford library的`getLine`比cin好，不会每次只能接受一个字符
+
 `CTRL+CLICK`
 - If you #include "strlib.h" in a Qt Creator project, you can CTRL+CLICK on _strlib.h_ to go into that file and see a list of functional prototypes with descriptions of what those functions do. Alternatively, you can click over to the Resources page on the course website, click "Stanford Library documentation," then click [_strlib.h_](https://web.stanford.edu/dept/cs_edu/resources/cslib_docs/strlib.html) on that page.
 **Accessing (and Modifying) Individual Characters in Strings**

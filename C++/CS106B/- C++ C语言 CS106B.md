@@ -29,7 +29,7 @@
 ## 笔记 [Lectures](https://web.stanford.edu/class/cs106b/about_lectures)
 - 第1节课 [Welcome!](https://web.stanford.edu/class/cs106b/lectures/01-welcome/)
 	- [syllabus的Prezi，挺有意思的](https://prezi.com/view/YlAFxJBKY907gEYROplc/)
-- [[第2节课 C++ Functions; Strings]] [C++ Fundamentals](https://web.stanford.edu/class/cs106b/lectures/02-cpp/)
+- [[Ch2 C++ Functions; Strings]] [C++ Fundamentals](https://web.stanford.edu/class/cs106b/lectures/02-cpp/)
 	- 基础的数据结构、引用、控制流、函数和程序运行
 	- main函数，程序入口
 	- include
@@ -43,7 +43,7 @@
 	- `endl` means "end of line", same as "\n", but more compatible;
 	- `cin`容易出错，不建议。建议直接用斯坦福的库
 		- `#include "simpio.h"`, `getInteger`只接受整数输入
-- [[第3节课]] [C++ Strings](https://web.stanford.edu/class/cs106b/lectures/03-strings/)|
+- [[Ch3 Strings]] [C++ Strings](https://web.stanford.edu/class/cs106b/lectures/03-strings/)|
 	- 函数
 		- `Function prototypes` C++需要先定义函数再用。如果想先用再定义，就要在前面加上prototype说明函数的用法（输入、输出）
 		- reference semantics：p.s.`&`引用 传递在内存中的位置（地址），需要modify参数的时候用`&`
@@ -64,7 +64,7 @@
 		- String
 			- `cout << "Type Your Name"`
 			- `cin >> name`
-- [[第4节课]] [Testing, Vectors, and Grids](https://web.stanford.edu/class/cs106b/lectures/04-vector-grid/)
+- [[Ch4 IO Streams; Vector and Grid]] [Testing, Vectors, and Grids](https://web.stanford.edu/class/cs106b/lectures/04-vector-grid/)
 	- Testing
 		- TestingTesting可以用来评分
 		- 单独开`STUENT_TEST`可以让之前的错误不影响之后的结果
