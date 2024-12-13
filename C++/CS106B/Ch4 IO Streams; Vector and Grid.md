@@ -1,3 +1,22 @@
+```C++
+#include <fstream>
+ifstream, ofstream 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - 写代码的原则
 	- 起名要直白
 	- 不要什么都堆`main()`函数，难读难debug
