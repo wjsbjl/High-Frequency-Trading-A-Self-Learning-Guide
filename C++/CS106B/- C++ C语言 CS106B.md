@@ -64,14 +64,14 @@
 		- String
 			- `cout << "Type Your Name"`
 			- `cin >> name`
-- [[Ch4 IO Streams; Vector and Grid]] [Testing, Vectors, and Grids](https://web.stanford.edu/class/cs106b/lectures/04-vector-grid/)
+- [[Ch4 IO Streams]] [Testing, Vectors, and Grids](https://web.stanford.edu/class/cs106b/lectures/04-vector-grid/)
 	- Testing
 		- TestingTesting可以用来评分
 		- 单独开`STUENT_TEST`可以让之前的错误不影响之后的结果
 		- 测试功能包括一般的测试以及计时功能
 	- ADT: Abstrace Data Type
 		- Vector和Grid Vector，为了省时间需要pass by reference而不是pass by value
-- [[第5节课]] [Stacks and Queues](https://web.stanford.edu/class/cs106b/lectures/05-stack-queue/)
+- [[之前的笔记]] [Stacks and Queues](https://web.stanford.edu/class/cs106b/lectures/05-stack-queue/)
 	- 共性
 		- 都是ADT，不能用`[]`访问
 	- Stack
