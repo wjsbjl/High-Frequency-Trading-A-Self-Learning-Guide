@@ -51,7 +51,7 @@ while ( CONDITION )
 }
 ```
 
-**For Loops**
+==**For Loops**==
 ```
 for ( INITIALIZATION_STATEMENT ; CONDITION ; POST_ITERATION_STATEMENT )  
 {  
@@ -61,14 +61,15 @@ for ( INITIALIZATION_STATEMENT ; CONDITION ; POST_ITERATION_STATEMENT )
 - 注意分号semicolon的使用
 - e.g. `for (int i=0; i < s.length(); i++){}`
 
-**For-Each Loops (Range-Based Loops)**
+==**For-Each Loops (Range-Based Loops)**==
 ```
 for ( DATA_TYPE  VARIABLE_NAME  : CONTAINER )  
 {  
    STATEMENT(S)   
 }
 ```
-- e.g. `string s = "giraffe"; for(char ch : s){cout << ch << endl}`
+- e.g.1. `string s = "giraffe"; for(char ch : s){cout << ch << endl}`
+- e.g.2. `Vector<string> names {"Ed", "Hal", "Sue"}; for (string name: names){cout << name <<endl;}`
 
 **Conditional (If-Else) Statements and Comparison Operators**
 ```
