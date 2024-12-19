@@ -40,19 +40,19 @@ int nums[5] {42, 17, -6, 0, 28}; // Example array
 
 ### Vector Members (5.1)
 
-| **Method**                         | **Description**                                                                                   |
-|------------------------------------|---------------------------------------------------------------------------------------------------|
-| `v.add(value);` or `v += value;` or `v += v1, v2, ..., vN;` | Appends value(s) at the end of the vector                                                         |
-| `v.clear();`                       | Removes all elements                                                                              |
-| `v[i]` or `v.get(i)`               | Returns the value at the given index                                                             |
-| `v.insert(i, value);`              | Inserts the given value just before the given index, shifting subsequent values to the right     |
-| `v.isEmpty()`                      | Returns `true` if the vector contains no elements                                                |
-| `v.remove(i);`                     | Removes/returns value at the given index, shifting subsequent values to the left                |
-| `v[i] = value;` or `v.set(i, value);` | Replaces value at the given index                                                               |
-| `v.subList(start, length)`         | Returns a new vector of a sub-range of indexes                                                   |
-| `v.size()`                         | Returns the number of elements in the vector                                                     |
-| `v.toString()`                     | Returns a string representation of the vector, such as `"{3, 42, -7, 15}"`                      |
-| `ostr << v`                        | Prints `v` to the given output stream                                                            |
+| **Method**                                                  | **Description**                                                                              |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| `v.add(value);` or `v += value;` or `v += v1, v2, ..., vN;` | Appends value(s) at the end of the vector                                                    |
+| `v.clear();`                                                | Removes all elements                                                                         |
+| `v[i]` or `v.get(i)`                                        | Returns the value at the given index                                                         |
+| `v.insert(i, value);`                                       | Inserts the given value just before the given index, shifting subsequent values to the right |
+| `v.isEmpty()`                                               | Returns `true` if the vector contains no elements                                            |
+| `v.remove(i);`                                              | Removes/returns value at the given index, shifting subsequent values to the left             |
+| `v[i] = value;` or `v.set(i, value);`                       | Replaces value at the given index                                                            |
+| `v.subList(start, length)`                                  | Returns a new vector of a sub-range of indexes                                               |
+| `v.size()`                                                  | Returns the number of elements in the vector                                                 |
+| `v.toString()`                                              | Returns a string representation of the vector, such as `"{3, 42, -7, 15}"`                   |
+| `ostr << v`                                                 | Prints `v` to the given output stream                                                        |
 
 ### Vector Insert/Remove
 
