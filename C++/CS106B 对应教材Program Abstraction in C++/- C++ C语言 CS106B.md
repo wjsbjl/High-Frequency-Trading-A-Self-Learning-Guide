@@ -1,3 +1,4 @@
+灌耳音听过几次课，会一些python，回来学C++
 ## 重新来听
 [视频网址](https://www.youtube.com/watch?v=FIroM06V2MA&list=PL-h0BZdG_K4kAmsfvAik-Za826pNbQd0d)
 第一遍把课听了，第二遍把课件看了，第三遍把这俩合起来。
@@ -22,7 +23,8 @@
 	- 拖了很久还是没写的作业
 - [A2. Fun with Collections](https://web.stanford.edu/class/cs106b/assignments/2-adt/)
 - [A3. Recursion Etudes](https://web.stanford.edu/class/cs106b/assignments/3-recursion/)
-- [A4. Recursive Backtracking](https://web.stanford.edu/class/cs106b/assignments/4-backtracking/)
+- [A4. Recursive Backtracking](https://web.stanford.edu/class/cs106b/assignments/4-backtracking/)]
+- \
 - [A5. Priority Queue](https://web.stanford.edu/class/cs106b/assignments/5-pqueue/)
 - [A6. Linked Lists](https://web.stanford.edu/class/cs106b/assignments/6-lists/)
 - [A7. Huffman Coding](https://web.stanford.edu/class/cs106b/assignments/7-huffman/)
