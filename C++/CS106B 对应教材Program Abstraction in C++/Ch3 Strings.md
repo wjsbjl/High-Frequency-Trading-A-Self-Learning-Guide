@@ -8,6 +8,7 @@
 		- 基本数据类型 `primitive types` _int_, _float_, _double_, and _char._
 		- strings可以用Dot Operator `.` 获取methods and properties
 **C++ String Member Functions**
+## 属性和方法
 
 | Member Function                             | Description                                                                                                                         |
 | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -89,3 +90,26 @@ int main()
 ```
 
 3. (_Pass-by-Reference Functions_) Trace through the following program by hand to see if you can determine the output it will produce. Then run compile and run the program to check your result.
+
+## 遍历
+方式一
+```
+int main() { 
+	std::string s = "Hello, world!"; 
+	for (char c : s) { 
+	std::cout << c << '\n'; 
+	} 
+	return 0; 
+}
+```
+方式二
+```
+int main() { 
+	std::string s = "Hello, world!"; 
+	for (int i=0; i<code.length();i++) { 
+		char c=s[i];
+		std::cout << c << '\n'; 
+	} 
+	return 0; 
+}
+```

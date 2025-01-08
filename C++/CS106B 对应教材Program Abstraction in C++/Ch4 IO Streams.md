@@ -15,6 +15,17 @@ input.close();
 ```
 > 这个`f.fail()`太容易触发，不建议`while (!input.fail()){getline(input,line);...;}
 
+方法2
+```Cpp
+#include <fstream>
+ifstream input;
+input.open(filename);
+string word;
+while(input >> word){
+	cout << word << endl;
+}
+```
+
 | Member function                | Description                                                               |
 |--------------------------------|---------------------------------------------------------------------------|
 | `f.clear();`                   | resets stream's error state, if any                                       |

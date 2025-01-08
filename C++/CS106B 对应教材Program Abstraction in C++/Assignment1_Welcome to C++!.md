@@ -18,3 +18,8 @@
 - ==不理解为什么Grid后面要加\<int\>==，
 	- **Data types** define the nature of the data and the operations that can be directly performed on such data.
 	- **Template classes** provide a mechanism to define classes or functions that can work with any type, promoting code reusability and flexibility. They are not types themselves but are used to generate types.
+	- You might have noticed that the first argument is a **Grid\<int\>**, a type we haven’t encountered before. This is a type representing a fixed-size, two-dimensional grid of integers, like the grids that we showed on the previous pages.
+- 位置搞错了，整成四个角的位置了
+- 变换顺序不会影响，一开始以为必须要同时处理四个位置
+
+## **Plotter**
