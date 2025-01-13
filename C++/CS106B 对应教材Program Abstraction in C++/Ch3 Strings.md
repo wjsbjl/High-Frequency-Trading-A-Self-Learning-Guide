@@ -41,22 +41,22 @@
 
 The _cctype_ library
 
-| Member Function | Description |
-| ---- | ---- |
-| isalnum(ch) | checks if a character is alphanumeric |
-| isalpha(ch) | checks if a character is alphabetic |
-| islower(ch) | checks if a character is a lowercase alphabetic character |
-| isupper(ch) | checks if a character is an uppercase alphabetic character |
-| isdigit(ch) | checks if a character is a digit |
-| isxdigit(ch) | checks if a character is a hexadecimal character |
-| iscntrl(ch) | checks if a character is a control character |
-| isgraph(ch) | checks if a character is a graphical (i.e., visible) character |
-| isspace(ch) | checks if a character is a space character (typically tab or space) |
-| isblank(ch) | checks if a character is a blank character |
-| isprint(ch) | checks if a character is a printing character according to locale |
-| ispunct(ch) | checks if a character is punctuation (visible non-alnum/non-space) |
-| toupper(ch) | converts a character to uppercase (pass-by-value!) |
-| tolower(ch) | converts a character to lowercase (pass-by-value!) |
+| Member Function | Description                                                         |
+| --------------- | ------------------------------------------------------------------- |
+| isalnum(ch)     | checks if a character is alphanumeric                               |
+| isalpha(ch)     | checks if a character is alphabetic                                 |
+| islower(ch)     | checks if a character is a lowercase alphabetic character           |
+| isupper(ch)     | checks if a character is an uppercase alphabetic character          |
+| isdigit(ch)     | checks if a character is a digit                                    |
+| isxdigit(ch)    | checks if a character is a hexadecimal character                    |
+| iscntrl(ch)     | checks if a character is a control character                        |
+| isgraph(ch)     | checks if a character is a graphical (i.e., visible) character      |
+| isspace(ch)     | checks if a character is a space character (typically tab or space) |
+| isblank(ch)     | checks if a character is a blank character                          |
+| isprint(ch)     | checks if a character is a printing character according to locale   |
+| ispunct(ch)     | checks if a character is punctuation (visible non-alnum/non-space)  |
+| toupper(ch)     | converts a character to uppercase (pass-by-value!)                  |
+| tolower(ch)     | converts a character to lowercase (pass-by-value!)                  |
 **C++'s Two Types of Strings**
 - C++ actually has two types of strings. We have seen the _string_ variable type, but any time we type a **string literal** (i.e., a hard-coded string in double quotes), we are actually getting a C-style string.
 	- C style `"abc"`

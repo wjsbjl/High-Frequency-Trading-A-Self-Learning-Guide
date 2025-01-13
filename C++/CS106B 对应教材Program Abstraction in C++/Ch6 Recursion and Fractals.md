@@ -46,8 +46,33 @@ Recursion is a powerful programming technique where a function calls itself to s
 
 Recursion is suited for problems where the solution to the problem can be facilitated through solving smaller instances of the same problem, such as sorting algorithms, calculating factorials, or traversing data structures.
 
+## Fractals
+## Stanford Graphics Library Overview
 
+The Stanford graphics library provides a simplified interface for drawing graphics in C++. It is used in educational settings to teach students about graphical programming concepts.
 
+### Key Functions
+
+- **`#include "gwindow.h"`**: Include this header to use the graphics library functions.
+
+#### Drawing Functions
+- **`gw.drawLine(x1, y1, x2, y2);`**: Draws a line between two points `(x1, y1)` and `(x2, y2)`.
+- **`gw.drawPolarLine(x, y, r, t);`**: Draws a line from `(x, y)` at angle `t` and of length `r`; returns the line's endpoint as a `GPoint`.
+- **`gw.drawOval(x, y, w, h);`**: Draws an oval bounded by the specified rectangle.
+- **`gw.fillRect(x, y, w, h);`**: Draws a filled rectangle.
+
+#### Pixel Functions
+- **`gw.getPixel(x, y);`**: Returns the RGB integer value of the pixel at `(x, y)`.
+- **`gw.setPixel(x, y, rgb);`**: Sets the pixel at `(x, y)` to the specified RGB color.
+- **`gw.setColor(color);`**: Sets the current drawing color. `color` can be a named string like "red" or an RGB string like "#ff00cc".
+
+### Example Usage
+
+```cpp
+GWindow gw(300, 200); // Create a window of size 300x200
+gw.setTitle("CS 106X Fractals"); // Set window title
+gw.drawLine(20, 20, 100, 100); // Draw a line
+```
 
 
 book Ch10.1-10.2

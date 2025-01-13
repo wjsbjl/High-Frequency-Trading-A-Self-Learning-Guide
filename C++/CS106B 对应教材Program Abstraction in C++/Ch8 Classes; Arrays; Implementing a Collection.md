@@ -1,0 +1,4 @@
+- Lecture 12 Classes; Arrays; Implementing a Collection
+- Book Ch6, 11, 14.1-2
+- Vedio 11 3:37
+- how to build stack
