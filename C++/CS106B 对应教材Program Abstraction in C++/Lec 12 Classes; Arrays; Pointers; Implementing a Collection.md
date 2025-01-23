@@ -1,7 +1,4 @@
-- Lecture 12 Classes; Arrays; Implementing a Collection
-- Book Ch6, 11, 14.1-2
-- Vedio 11 3:37
-- how to build stack
+## Summary
 - 文件
 	- `.h`定义类的属性和方法都有哪些，有点像prototype
 	- `.cpp`写实现
@@ -13,7 +10,12 @@
 	- array，Vector和Stack都基于array实现。一般大于当前数据长度，有多余slots，称为unfilled array
 	- Lecture 11后半部分写了ArrayStack
 	- Lecture 12讲了Linked data structures
-## Classes and Objects
+
+- Lecture 12-14
+- Book Ch6, 11, 14.1-2
+- Vedio 11-15 3:37
+- how to build stack
+- ## Classes and Objects
 
 - **class**: A template for a new type of objects.
   - Allows us to add new types to the language.

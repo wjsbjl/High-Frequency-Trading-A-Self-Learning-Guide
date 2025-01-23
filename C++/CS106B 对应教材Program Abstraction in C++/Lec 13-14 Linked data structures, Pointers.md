@@ -1,6 +1,7 @@
 - Refs
 	- Vedio Lecture 12-13
 	- Book 11.2, 11.4; 12.1-12.3
+## Summary
 - Contents
 	- Linked Data Structures
 	- Structure: 小的类，默认members为public
@@ -9,6 +10,14 @@
 	- `a->next = b->next`: a指针和b指针指向同一个位置
 	- `a=b->next`: a指针直接指向b的下一个结点
 	- `a=b`: a指针指向b指针指的位置
+- `new`
+	- 这里的`new`是用来创建类的一个实例；`int`这种primitive data type不用这样。
+- 指针修改
+	- 理解`temp=temp->next`（不改变数据内容）和`temp->next=nullptr`（相当于从这里截断）的区别
+- `delete pointer` 删除
+	- 例如`front=front->next`，前面的内容在程序结束时才会删除，造成memory leak
+	- 这块内存也不会被其他命令占用，memory manager认为这部分内存还在被使用
+	- `ListNode* temp = front;front = front->next;delete temp;`
 ## Linked Data Structures
 
 Some collections store data using linked sequences of nodes.
